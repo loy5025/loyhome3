@@ -6,7 +6,6 @@
 
 /* 반응형 백그라운드 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
 .bg {
-    position: absolute;
     max-width: 700px;
     height: 0%;
     padding-bottom: calc(980/700*100%);
@@ -14,12 +13,17 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+}
 
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+/* 10 ~ 14, 16, 17, 18, 21, 22 반응형 하프 백그라운드 이미지 */
+.halfBg {
+    max-width: 700px;
+    height: 0%;
+    padding-bottom: calc(490/700*100%);
+    /*calc(이미지 높이/이미지 너비*100%)*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 /* 반응형 백그라운드 이미지 & 페이드인 밀림 현상 잡기 ------------------------------------------------------------ */
@@ -33,15 +37,4 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-/* 10 ~ 14, 16, 17, 18, 21, 22 반응형 하프 백그라운드 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
-.halfBg {
-    max-width: 700px;
-    height: 0%;
-    padding-bottom: calc(490/700*100%);
-    /*calc(이미지 높이/이미지 너비*100%)*/
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
 }
