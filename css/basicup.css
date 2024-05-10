@@ -1,5 +1,5 @@
     /* basicup - 링크: https://devinus.tistory.com/58 */
-    .pv-box .fade-wrap {
+    .fade-wrap .basicUp {
         /* 나타나는 효과가 1초 동안 발생 */
         transition: 1s;
         /* 투명도 0 (안보임) */
@@ -9,7 +9,7 @@
         bottom: -50px;
     }
 
-    .pv-box .fade-wrap.fade-in {
+    .fade-wrap .basicUp.fade-in {
         /* 투명도 0 (보임) */
         opacity: 1;
         /* 아래에서 위로 나타나게 하기 위함 */
