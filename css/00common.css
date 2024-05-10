@@ -7,7 +7,7 @@
     border: solid;
 }
 
-/* 반응형 백그라운드 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
+/* 반응형 배경 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
 .bg {
     max-width: 700px;
     height: 0%;
@@ -21,7 +21,7 @@
     border: solid salmon;
 }
 
-/* 10 ~ 14, 16, 17, 18, 21, 22 반응형 하프 백그라운드 이미지 */
+/* 10 ~ 14, 16, 17, 18, 21, 22 반응형 하프 배경 이미지 */
 .halfBg {
     max-width: 700px;
     height: 0%;
@@ -32,7 +32,7 @@
     background-size: contain;
 }
 
-/* 반응형 백그라운드 이미지 & 페이드인 밀림 현상 잡기 ------------------------------------------------------------ */
+/* 반응형 배경 이미지 & 페이드인 밀림 현상 잡기 ------------------------------------------------------------ */
 .fade-wrap,
 .fade-wrap.fade-in {
     height: 0px;
@@ -43,4 +43,61 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* 로드 시 배경 이미지 fade in ------------------------------------------------------------ */
+.bg {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
