@@ -1,6 +1,6 @@
-/* Observer up1s(베이직) 스크롤 이벤트 -------------------------------------------------- */
-// Intersection Observer up1s 생성
-const observerup1s = new IntersectionObserver(
+/* Observer up1_5s 스크롤 이벤트 -------------------------------------------------- */
+// Intersection Observer up1_5s 생성
+const observerup1_5s = new IntersectionObserver(
     (entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -17,7 +17,7 @@ const observerup1s = new IntersectionObserver(
 );
 
 // 관찰 대상 설정
-const targetElementsup1s = document.querySelectorAll(".up1s");
-targetElementsup1s.forEach((element) => {
-    observerup1s.observe(element);
+const targetElementsup1_5s = document.querySelectorAll(".up1_5s");
+targetElementsup1_5s.forEach((element) => {
+    observerup1_5s.observe(element);
 });
