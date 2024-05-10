@@ -1,4 +1,4 @@
-/* Observer BasicUp 스크롤 이벤트 -------------------------------------------------- */
+/* Observer up2_5s 스크롤 이벤트 -------------------------------------------------- */
 // Intersection Observer up2_5s 생성
 const observerup2_5s = new IntersectionObserver(
     (entries, observer) => {
