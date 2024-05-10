@@ -6,6 +6,7 @@
 
 /* 반응형 백그라운드 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
 .bg {
+    position: relative;
     max-width: 700px;
     height: 0%;
     padding-bottom: calc(980/700*100%);
@@ -23,7 +24,6 @@
 
 /* 반응형 레이어드 이미지 ------------------------------------------------------------ */
 img {
-    position: relative;
     display: block;
     max-width: 100%;
     height: auto;
