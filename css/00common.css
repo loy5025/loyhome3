@@ -6,7 +6,7 @@
 
 /* 반응형 백그라운드 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
 .bg {
-    position: relative;
+    position: absolute;
     max-width: 700px;
     height: 0%;
     padding-bottom: calc(980/700*100%);
