@@ -2,9 +2,6 @@
 .pv-box {
     max-width: 700px;
     margin: 0 auto;
-
-
-    border: solid;
 }
 
 
@@ -18,9 +15,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-
-
-    border: solid salmon;
 }
 
 
@@ -42,15 +36,6 @@
 .fade-wrap,
 .fade-wrap.fade-in {
     height: 0px;
-}
-
-
-
-/* 반응형 레이어드 이미지 ------------------------------------------------------------ */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 
@@ -110,4 +95,43 @@ img {
     to {
         opacity: 1;
     }
+}
+
+
+
+/* 반응형 레이어드 이미지 ------------------------------------------------------------ */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* 페이지 10-1 ~ 14-2 컬러뷰, 16 정렬 ------------------------------------------------------------ */
+.photoBg 
+.length {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorAll,
+.colorList,
+.colorTip,
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* 페이지 10 ~ 14, 16, 17, 18, 21, 22 절반 백그라운드 반응형 이미지 ------------------------------------------------------------ 출처 https://amango.tistory.com/81 */
+.halfBg {
+    max-width: 700px;
+    height: 0%;
+    padding-bottom: calc(490/700*100%);
+    /*calc(이미지 높이/이미지 너비*100%)*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
