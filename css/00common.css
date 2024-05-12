@@ -1,19 +1,9 @@
-/* 전체 이미지 가운데 정렬 */
-.content_wide{
-    width: 100%;
-    max-width: 700px;
-    min-width: 280px;
-    display: block;
-    margin: auto;
-}
-
-
-
 /* 이미지 반응형 최대 사이즈 지정 */
 .pv-box {
     max-width: 700px;
-    min-width: 350px;
+    min-width: 280px;
     margin: 0 auto;
+    overflow: hidden /* 박스 밖으로 나간 애니메이션 요소 숨기기 */
 }
 
 
