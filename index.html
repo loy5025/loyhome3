@@ -107,11 +107,10 @@
     <link rel="stylesheet" type="text/css" href="css/right1_5s.css">
     <link rel="stylesheet" type="text/css" href="css/right2s.css">
 
-
+    
 
 </head>
-
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false"> <!-- 우클릭 & 드래그 금지 -->
     <div id="wide" class="content_wide">
         <div class="pv-box"><!-- 전체 최대 너비 700px -->
             <div class="fade-wrap bg bgfadein bg01"> <!-------------------------------------------------- 01 페이지 -->
@@ -548,8 +547,13 @@
     <script src="js/right1s_1.js"></script>
     <script src="js/right1_5s.js"></script>
     <script src="js/right2s.js"></script>
+    <!-- 우클릭 & 드래그 금지 -->
+    <script type="text/javascript">
+        document.oncontextmenu = function(){return false;}
+     </script>
 
 
+    
 </body>
 
 </html>
