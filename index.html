@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[웹디자이너 임오연] '무비스타' 젤네일 상세페이지 애니메이션</title>
+    <title>[웹디자이너 임오연] 스마일게이트 이벤트 페이지 리뉴얼</title>
 
 
 
@@ -12,555 +12,57 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/favicon/flat-design-touch.png">
 
+    
 
+    <style>
+        body {
+            margin: 0 0;
+            background-color: #778a42;
+        }
 
-    <!-- 공통 스타일 CSS -------------------------------------------------->
-    <link rel="stylesheet" type="text/css" href="css/00common.css">
+        .bg01 {
+            /* 페이지 1 배경 이미지 */
+            background-image: url("img/sg_event01.png");
+            width: 100%;
+            height: 1444px;
+        }
 
+        .bg02 {
+            /* 페이지 2 배경 이미지 */
+            background-image: url("img/sg_event02_01.png");
+            width: 100%;
+            height: 1673px;
+        }
 
+        .bg03 {
+            /* 페이지 2 배경 이미지 */
+            background-image: url("img/sg_event02_02.png");
+            width: 100%;
+            height: 1106px;
+        }
 
-    <!-- 페이지 별 스타일 CSS -------------------------------------------------->
-    <!--1page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/01page.css">
-    <!--2page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/02page.css">
-    <!--3page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/03page.css">
-    <!--4page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/04page.css">
-    <!--5page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/05page.css">
-
-
-    <!--6page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/06page.css">
-    <!--7page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/07page.css">
-    <!--8page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/08page.css">
-    <!--9page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/09page.css">
-    <!--10page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/10_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/10_2page.css">
-
-
-    <!--11page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/11_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/11_2page.css">
-    <!--12page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/12_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/12_2page.css">
-    <!--13page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/13_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/13_2page.css">
-    <!--14page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/14_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/14_2page.css">
-    <!--15page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/15page.css">
-
-
-    <!--16page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/16_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/16_2page.css">
-    <!--17page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/17_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/17_2page.css">
-    <!--18page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/18_1page.css">
-    <link rel="stylesheet" type="text/css" href="css/18_2page.css">
-    <!--19page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/19page.css">
-    <!--20page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/20page.css">
-
-
-    <!--21page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/21page.css">
-    <!--22page CSS-->
-    <link rel="stylesheet" type="text/css" href="css/22page.css">
-
-
-
-    <!-- 스크롤 페이드인 애니메이션 CSS -------------------------------------------------->
-    <!-- 배경 이미지 페이드인 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/bgfadein.css">
-    <!-- 페이드인 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/fadein0_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/fadein1s.css">
-    <link rel="stylesheet" type="text/css" href="css/fadein1_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/fadein2s.css">
-    <!-- 업 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/up0_2s.css"> <!-- 10px -->
-    <link rel="stylesheet" type="text/css" href="css/up0_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/up1s.css">
-    <link rel="stylesheet" type="text/css" href="css/up1_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/up2s.css">
-    <link rel="stylesheet" type="text/css" href="css/up2_5s.css">
-    <!-- 다운 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/down0_5s.css"> <!-- 30px -->
-    <link rel="stylesheet" type="text/css" href="css/down1s.css">
-    <!-- 레프트 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/left0_3s.css"> <!-- 20px -->
-    <link rel="stylesheet" type="text/css" href="css/left1s.css">
-    <link rel="stylesheet" type="text/css" href="css/left2s.css">
-    <!-- 라이트 - 기본 50px -->
-    <link rel="stylesheet" type="text/css" href="css/right0_3s.css"> <!-- 20px -->
-    <link rel="stylesheet" type="text/css" href="css/right0_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/right1s.css">
-    <link rel="stylesheet" type="text/css" href="css/right1s_1.css"> <!-- 20px -->
-    <link rel="stylesheet" type="text/css" href="css/right1_5s.css">
-    <link rel="stylesheet" type="text/css" href="css/right2s.css">
-
-
-
+        .bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+        }
+    </style>
 </head>
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false">
+<body>
+    <!-- oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false"> -->
     <!-- 우클릭 & 드래그 금지 -->
     <div id="wide" class="content_wide">
-        <div class="pv-box"><!-- 전체 최대 너비 700px -->
-            <div class="fade-wrap bg bgfadein bg01"> <!-------------------------------------------------- 01 페이지 -->
-                <img class="up1s" src="img/page01-2.png" />
-                <img class="up1_5s" src="img/page01-3.png" />
-                <img class="up2s" src="img/page01-4.png" />
-                <img class="up2_5s" src="img/page01-5.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg02"> <!-------------------------------------------------- 02 페이지 -->
-                <img src="img/page02-2.png" />
-                <img class="right2s" src="img/page02-3.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg03"> <!-------------------------------------------------- 03 페이지 -->
-                <img class="down0_5s" src="img/page03-2.png" />
-                <img class="up1s" src="img/page03-3.png" />
-                <img class="up2s" src="img/page03-4.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg04"> <!-------------------------------------------------- 04 페이지 -->
-                <img class="fadein1s" src="img/page04-2.png" />
-                <img class="up1s" src="img/page04-3.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg05"> <!-------------------------------------------------- 05 페이지 -->
-                <img class="down1s logo" src="img/page05-2.png" />
-                <img class="right1s_1 bottle" src="img/page05-3.png" />
-                <div class="cb">
-                    <div class="cover">
-                        <img class="up1s" src="img/page05-4.png" />
-                    </div>
-                    <div class="brick">
-                        <img class="up1_5s" src="img/page05-5.png" />
-                    </div>
-                </div>
-                <div class="ps">
-                    <div class="parts">
-                        <img class="up2s" src="img/page05-6.png" />
-                    </div>
-                    <div class="sticker">
-                        <img class="up2_5s" src="img/page05-7.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg06"> <!-------------------------------------------------- 06 페이지 -->
-                <img src="img/page06-2.png" />
-                <img class="up0_5s" src="img/page06-3.png" />
-                <img class="up1s" src="img/page06-4.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg07"> <!-------------------------------------------------- 07 페이지 -->
-                <img class="up0_5s" src="img/page07-2.png" />
-                <img class="up1s" src="img/page07-3.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg08"> <!-------------------------------------------------- 08 페이지 -->
-                <img class="down1s" src="img/page08-2.png" />
-                <img class="right1s_1" src="img/page08-3.png" />
-                <img class="fadein2s" src="img/page08-4.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 09 페이지 -->
-                <img class="up1s" src="img/page09-2.png" />
-                <img class="up2s" src="img/page09-3.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 10 페이지 -->
-                <div class="halfBg colorAll bg10_1"> <!-- 10-1 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page10-2.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page10-3.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page10-4.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page10-5.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page10-6.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="halfBg colorAll bg10_2"> <!-- 10-2 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page10-8.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page10-9.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page10-10.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page10-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page10-12.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 11 페이지 -->
-                <div class="halfBg colorAll bg11_1"> <!-- 11-1 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page11-2.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page11-3.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page11-4.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page11-5.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page11-6.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="halfBg colorAll bg11_2"> <!-- 11-2 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page11-8.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page11-9.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page11-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page11-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page11-12.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 12 페이지 -->
-                <div class="halfBg colorAll bg12_1"> <!-- 12-1 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page12-2.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page12-3.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page12-4.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page12-5.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page12-6.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="halfBg colorAll bg12_2"> <!-- 12-2 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page12-8.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page12-9.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page12-10.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page12-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page12-12.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 13 페이지 -->
-                <div class="halfBg colorAll bg13_1"> <!-- 13-1 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page13-2.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page13-3.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page13-4.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page13-5.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page13-6.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="halfBg colorAll bg13_2"> <!-- 13-2 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page13-8.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page13-9.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page13-10.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page13-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page13-12.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 14 페이지 -->
-                <div class="halfBg colorAll bg14_1"> <!-- 14-1 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page14-2.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page14-3.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page14-4.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page14-5.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page14-6.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="halfBg colorAll bg14_2"> <!-- 14-2 -->
-                    <div class="colorList">
-                        <div class="">
-                            <img class="right0_3s" src="img/page14-8.png" />
-                        </div>
-                        <div class="colorView">
-                            <div class="">
-                                <div class="">
-                                    <img class="left0_3s" src="img/page14-9.png" />
-                                </div>
-                                <div class="colorTip">
-                                    <div class="">
-                                        <img class="up0_5s" src="img/page14-10.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1s" src="img/page14-11.png" />
-                                    </div>
-                                    <div class="">
-                                        <img class="up1_5s" src="img/page14-12.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg15"> <!-------------------------------------------------- 15 페이지 -->
-                <img class="up0_5s" src="img/page15-2.png" />
-                <img class="" src="img/page15-3.png" />
-                <img class="up1_5s" src="img/page15-4.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 16 페이지 -->
-                <div class="halfBg photoBg bg16_1"> <!-- 16-1 -->
-                    <img class="" src="img/page16-3.png" />
-                    <img class="down1s" src="img/page16-4.png" />
-                    <div class="horizontal">
-                        <div class="">
-                            <img class="right2s" src="img/page16-5.png" />
-                        </div>
-                        <div class="">
-                            <img class="up1_5s" src="img/page16-6.png" />
-                        </div>
-                    </div>
-                    <div class="halfBg bg16_2"> <!-- 16-2 -->
-                        <img class="" src="img/page16-8.png" />
-                        <img class="left2s" src="img/page16-9.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 17 페이지 -->
-                <div class="halfBg photoBg bg17_1"> <!-- 17-1 -->
-                    <img class="up1s" src="img/page17-3.png" />
-                </div>
-                <div class="halfBg bg17_2"> <!-- 17-2 -->
-                    <img class="up2s" src="img/page17-5.png" />
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg09"> <!-------------------------------------------------- 18 페이지 -->
-                <div class="halfBg photoBg bg18_1"> <!-- 18-1 -->
-                </div>
-                <div class="halfBg bg18_2"> <!-- 18-2 -->
-                    <img class="up1_5s" src="img/page18-4.png" />
-                </div>
-            </div>
-
-            <div class="fade-wrap horizontal bg bg09"> <!-------------------------------------------------- 19 페이지 -->
-                <div class="length">
-                    <img class="right0_5s" src="img/page19-2.png" />
-                    <img class="up1s" src="img/page19-3.png" />
-                </div>
-                <div class="length">
-                    <img class="down1s" src="img/page19-4.png" />
-                    <img class="up1_5s" src="img/page19-5.png" />
-                </div>
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg20"> <!-------------------------------------------------- 20 페이지 -->
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg21"> <!-------------------------------------------------- 21 페이지 -->
-                <img class="up0_2s" src="img/page21-2.png" />
-                <img class="up0_2s" src="img/page21-3.png" />
-            </div>
-
-            <div class="fade-wrap bg bgfadein bg22"> <!-------------------------------------------------- 22 페이지 -->
-                <img class="up0_2s" src="img/page22-2.png" />
-                <img class="up0_2s" src="img/page22-3.png" />
-            </div>
+        <div class="pv-box"><!-- 전체 최대 너비 2560px -->
+            <div class="fade-wrap bg bg01"> </div><!-------------------------------------------------- 01 페이지 -->
+        </div>
+        <div class="pv-box"><!-- 전체 최대 너비 2560px -->
+            <div class="fade-wrap bg bg02"> </div><!-------------------------------------------------- 02 페이지 -->
+        </div>
+        <div class="pv-box"><!-- 전체 최대 너비 2560px -->
+            <div class="fade-wrap bg bg03"> </div><!-------------------------------------------------- 03 페이지 -->
         </div>
     </div>
-
-
-    <!--자바스크립트-------------------------------------------------->
-    <!--Observer 배경 이미지 페이드인 JS-->
-    <script src="js/bgfadein.js"></script>
-    <!--Observer 페이드인 JS-->
-    <script src="js/fadein0_5s.js"></script>
-    <script src="js/fadein1s.js"></script>
-    <script src="js/fadein1_5s.js"></script>
-    <script src="js/fadein2s.js"></script>
-    <!--Observer 업 JS-->
-    <script src="js/up0_2s.js"></script>
-    <script src="js/up0_5s.js"></script>
-    <script src="js/up1s.js"></script>
-    <script src="js/up1_5s.js"></script>
-    <script src="js/up2s.js"></script>
-    <script src="js/up2_5s.js"></script>
-    <!--Observer 다운 JS-->
-    <script src="js/down0_5s.js"></script>
-    <script src="js/down1s.js"></script>
-    <!--Observer 레프트 JS-->
-    <script src="js/left0_3s.js"></script>
-    <script src="js/left1s.js"></script>
-    <script src="js/left2s.js"></script>
-    <!--Observer 라이트 JS-->
-    <script src="js/right0_3s.js"></script>
-    <script src="js/right0_5s.js"></script>
-    <script src="js/right1s.js"></script>
-    <script src="js/right1s_1.js"></script>
-    <script src="js/right1_5s.js"></script>
-    <script src="js/right2s.js"></script>
-    <!-- 우클릭 & 드래그 금지 -->
-    <script type="text/javascript">
-        document.oncontextmenu = function () { return false; }
-    </script>
-
-
 
 </body>
 
